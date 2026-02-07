@@ -379,6 +379,129 @@ section h2 {
   margin: 0;
 }
 
+/* Upcoming features */
+.upcoming {
+  padding: 3rem 0;
+  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%);
+}
+
+.upcoming-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.upcoming-label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--purple);
+  background: rgba(124, 58, 237, 0.1);
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  margin-bottom: 0.75rem;
+}
+
+.upcoming-header h2 {
+  font-size: 1.75rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.upcoming-intro {
+  color: var(--slate-600);
+  margin: 0;
+  font-size: 1.0625rem;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.upcoming-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.upcoming-card {
+  padding: 1.75rem;
+  border-radius: 16px;
+  background: var(--white);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.upcoming-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(124, 58, 237, 0.12);
+}
+
+.upcoming-card--1 {
+  border-left: 4px solid var(--purple);
+}
+
+.upcoming-card--2 {
+  border-left: 4px solid var(--teal);
+}
+
+.upcoming-card--3 {
+  border-left: 4px solid var(--amber);
+}
+
+.upcoming-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.upcoming-card--1 .upcoming-icon {
+  background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);
+  color: var(--purple);
+}
+
+.upcoming-card--2 .upcoming-icon {
+  background: linear-gradient(135deg, var(--teal-light) 0%, #99f6e4 100%);
+  color: var(--teal);
+}
+
+.upcoming-card--3 .upcoming-icon {
+  background: linear-gradient(135deg, var(--amber-light) 0%, #fde68a 100%);
+  color: var(--amber);
+}
+
+.upcoming-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.upcoming-card h3 {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--slate-800);
+  margin: 0 0 0.5rem 0;
+}
+
+.upcoming-card p {
+  font-size: 0.9rem;
+  color: var(--slate-500);
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 680px) {
+  .upcoming-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .upcoming-header h2 {
+    font-size: 1.5rem;
+  }
+}
+
 /* How it works + Output — two columns */
 .how-and-output {
   max-width: 100%;
