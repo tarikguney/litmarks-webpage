@@ -240,6 +240,11 @@ section h2 {
   background: linear-gradient(180deg, var(--slate-50) 0%, var(--white) 100%);
 }
 
+.output-intro {
+  color: var(--slate-600);
+  margin: 0 0 1rem 0;
+}
+
 .code-block {
   background: linear-gradient(145deg, #1e1b4b 0%, var(--slate-900) 100%);
   color: #e2e8f0;
