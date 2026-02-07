@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LitMarks.ai — Export your Kindle highlights</title>
+  <meta name="description" content="Chrome extension to export your Kindle notes and highlights from read.amazon.com/notebook.">
+  <link rel="icon" type="image/png" href="assets/icon48.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <img src="assets/icon128.png" alt="LitMarks" class="logo">
+      <span class="brand">LitMarks<span class="brand-ai">.ai</span></span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Export your Kindle highlights</h1>
+        <p class="hero-tagline">One-click export of notes and highlights from read.amazon.com/notebook to JSON.</p>
+        <a href="https://github.com" class="cta" target="_blank" rel="noopener">Install from GitHub</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2>Features</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              <path d="M8 7h8"/>
+              <path d="M8 11h8"/>
+            </svg>
+          </div>
+          <h3>Select books</h3>
+          <p>Choose which books to export. Use Select all or Clear for bulk actions.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <path d="M10 13l-2 2 2 2"/>
+              <path d="M14 17l2-2-2-2"/>
+            </svg>
+          </div>
+          <h3>JSON export</h3>
+          <p>Structured output with titles, authors, highlights, colors, and locations.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          <h3>One-click</h3>
+          <p>Works directly on the Kindle notebook page. No extra steps.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-works">
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li>
+          <span class="step-num">1</span>
+          <p>Open <a href="https://read.amazon.com/notebook" target="_blank" rel="noopener">read.amazon.com/notebook</a> and log in.</p>
+        </li>
+        <li>
+          <span class="step-num">2</span>
+          <p>Click the LitMarks icon in the Chrome toolbar.</p>
+        </li>
+        <li>
+          <span class="step-num">3</span>
+          <p>Select the books you want and click Export selected.</p>
+        </li>
+        <li>
+          <span class="step-num">4</span>
+          <p>Download the JSON file when done.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="output">
+      <h2>Output format</h2>
+      <pre class="code-block"><code>{
+  "extractedAt": "2025-02-06T...",
+  "books": [
+    {
+      "asin": "B00LMGLXTS",
+      "title": "Hooked: How to Build Habit-Forming Products",
+      "author": "Nir Eyal and Ryan Hoover",
+      "highlights": [
+        {
+          "text": "...",
+          "color": "yellow",
+          "location": "75"
+        }
+      ]
+    }
+  ]
+}</code></pre>
+    </section>
+
+    <section class="install">
+      <h2>Installation</h2>
+      <ol class="install-steps">
+        <li>Clone or download the <a href="https://github.com" target="_blank" rel="noopener">Chrome extension repo</a>.</li>
+        <li>Open Chrome and go to <code>chrome://extensions</code>.</li>
+        <li>Enable <strong>Developer mode</strong> (top right).</li>
+        <li>Click <strong>Load unpacked</strong> and select the extension folder.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>LitMarks.ai — Chrome extension for Kindle highlights</p>
+    <p><a href="https://github.com" target="_blank" rel="noopener">View on GitHub</a></p>
+  </footer>
+</body>
+</html>
