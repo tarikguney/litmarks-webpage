@@ -40,6 +40,7 @@ body {
 .header-inner {
   max-width: 960px;
   margin: 0 auto;
+  padding: 0 1.5rem;
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -62,16 +63,21 @@ body {
   color: var(--purple);
 }
 
+/* Shared content container — aligns all sections */
+.content-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
 /* Hero — short, wide */
 .hero {
-  padding: 2rem 1.5rem 2.5rem;
+  padding: 2rem 0 2.5rem;
   margin-bottom: 3rem;
   background: linear-gradient(135deg, #ede9fe 0%, #f5f3ff 25%, var(--slate-50) 50%, #fef3c7 100%);
 }
 
 .hero-content {
-  max-width: 960px;
-  margin: 0 auto;
   text-align: center;
 }
 
@@ -92,7 +98,9 @@ body {
 }
 
 .cta {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   padding: 0.75rem 1.75rem;
   font-size: 1rem;
   font-weight: 600;
@@ -104,6 +112,12 @@ body {
   box-shadow: 0 2px 8px rgba(124, 58, 237, 0.25);
 }
 
+.cta-icon {
+  display: inline-block;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+
 .cta:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 16px rgba(124, 58, 237, 0.35);
@@ -111,16 +125,16 @@ body {
 
 /* Carousel section — below hero */
 .carousel-section {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 1.5rem 1rem;
+  padding: 0 0 1rem;
+}
+
+.carousel-section .content-wrap {
+  padding-bottom: 0;
 }
 
 /* Sections */
 section {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 3rem 1.5rem;
+  padding: 3rem 0;
 }
 
 section h2 {
@@ -294,8 +308,7 @@ section h2 {
 
 /* Features */
 .features {
-  max-width: 960px;
-  padding: 1.5rem 1.5rem;
+  padding: 1.5rem 0;
   background: linear-gradient(180deg, var(--white) 0%, var(--slate-50) 100%);
 }
 
@@ -374,13 +387,15 @@ section h2 {
 }
 
 .how-and-output-inner {
-  max-width: 960px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 3rem;
-  padding: 3rem 1.5rem;
   align-items: start;
+}
+
+.how-and-output .content-wrap {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .how-it-works,
