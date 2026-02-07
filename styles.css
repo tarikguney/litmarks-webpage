@@ -342,18 +342,18 @@ section h2 {
 }
 
 .feature-card:nth-child(1) {
-  background: linear-gradient(180deg, #ede9fe 0%, #faf5ff 100%);
-  border-color: #ddd6fe;
+  background: radial-gradient(ellipse 120% 100% at 0% 0%, #ede9fe, var(--white) 70%);
+  border-color: #c4b5fd;
 }
 
 .feature-card:nth-child(2) {
-  background: linear-gradient(180deg, var(--teal-light) 0%, #f0fdfa 100%);
-  border-color: #99f6e4;
+  background: radial-gradient(ellipse 120% 100% at 100% 0%, var(--teal-light), var(--white) 70%);
+  border-color: #5eead4;
 }
 
 .feature-card:nth-child(3) {
-  background: linear-gradient(180deg, var(--amber-light) 0%, #fffbeb 100%);
-  border-color: #fde68a;
+  background: radial-gradient(ellipse 120% 100% at 0% 100%, var(--amber-light), var(--white) 70%);
+  border-color: #fcd34d;
 }
 
 .feature-icon {
