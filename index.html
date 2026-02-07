@@ -28,6 +28,40 @@
       </div>
     </section>
 
+    <section class="carousel-section">
+      <div class="carousel">
+        <div class="carousel-frame">
+          <div class="carousel-chrome-bar">
+            <span class="carousel-dot"></span>
+            <span class="carousel-dot"></span>
+            <span class="carousel-dot"></span>
+            <span class="carousel-title">LitMarks.ai</span>
+          </div>
+          <div class="carousel-track">
+            <div class="carousel-slide carousel-slide--active">
+              <img src="assets/screenshot-1-marketplace.png" alt="LitMarks extension showing book list and export">
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/screenshot-2-marketplace.png" alt="LitMarks ready screen with instructions">
+            </div>
+          </div>
+          <div class="carousel-progress"></div>
+        </div>
+        <div class="carousel-nav">
+          <button type="button" class="carousel-btn carousel-btn--prev" aria-label="Previous">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div class="carousel-dots">
+            <button type="button" class="carousel-dot-btn active" data-index="0" aria-label="Slide 1"></button>
+            <button type="button" class="carousel-dot-btn" data-index="1" aria-label="Slide 2"></button>
+          </div>
+          <button type="button" class="carousel-btn carousel-btn--next" aria-label="Next">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
     <section class="features">
       <h2>Features</h2>
       <div class="features-grid">
@@ -67,32 +101,33 @@
       </div>
     </section>
 
-    <section class="how-it-works">
-      <h2>How it works</h2>
-      <ol class="steps">
-        <li>
-          <span class="step-num">1</span>
-          <p>Open <a href="https://read.amazon.com/notebook" target="_blank" rel="noopener">read.amazon.com/notebook</a> and log in.</p>
-        </li>
-        <li>
-          <span class="step-num">2</span>
-          <p>Click the LitMarks icon in the Chrome toolbar.</p>
-        </li>
-        <li>
-          <span class="step-num">3</span>
-          <p>Select the books you want and click Export selected.</p>
-        </li>
-        <li>
-          <span class="step-num">4</span>
-          <p>Download the JSON file when done.</p>
-        </li>
-      </ol>
-    </section>
-
-    <section class="output">
-      <h2>Output format</h2>
-      <p class="output-intro">Download the JSON file and use it in any integration you want—Notion, Obsidian, your own app, or anywhere else.</p>
-      <pre class="code-block"><code>{
+    <section class="how-and-output">
+      <div class="how-and-output-inner">
+        <div class="how-it-works">
+          <h2>How it works</h2>
+          <ol class="steps">
+            <li>
+              <span class="step-num">1</span>
+              <p>Open <a href="https://read.amazon.com/notebook" target="_blank" rel="noopener">read.amazon.com/notebook</a> and log in.</p>
+            </li>
+            <li>
+              <span class="step-num">2</span>
+              <p>Click the LitMarks icon in the Chrome toolbar.</p>
+            </li>
+            <li>
+              <span class="step-num">3</span>
+              <p>Select the books you want and click Export selected.</p>
+            </li>
+            <li>
+              <span class="step-num">4</span>
+              <p>Download the JSON file when done.</p>
+            </li>
+          </ol>
+        </div>
+        <div class="output">
+          <h2>Output format</h2>
+          <p class="output-intro">Download the JSON file and use it in any integration you want—Notion, Obsidian, your own app, or anywhere else.</p>
+          <pre class="code-block"><code>{
   "extractedAt": "2025-02-06T...",
   "books": [
     {
@@ -109,9 +144,12 @@
     }
   ]
 }</code></pre>
+        </div>
+      </div>
     </section>
   </main>
 
+  <script src="carousel.js"></script>
   <footer class="footer">
     <p>LitMarks.ai — Chrome extension for Kindle highlights</p>
     <p><a href="privacy.html">Privacy Policy</a> · <a href="https://github.com" target="_blank" rel="noopener">View on GitHub</a></p>
