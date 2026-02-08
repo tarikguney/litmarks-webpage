@@ -13,6 +13,9 @@
     index = ((i % slides.length) + slides.length) % slides.length;
     slides.forEach((s, j) => s.classList.toggle('carousel-slide--active', j === index));
     dots.forEach((d, j) => d.classList.toggle('active', j === index));
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'carousel_slide_view', { slide_index: index, slide_total: slides.length });
+    }
     resetProgress();
   }
 

@@ -152,7 +152,7 @@
           <ol class="steps">
             <li>
               <span class="step-num">1</span>
-              <p>Open <a href="https://read.amazon.com/notebook" target="_blank" rel="noopener">read.amazon.com/notebook</a> and log in.</p>
+              <p>Open <a href="https://read.amazon.com/notebook" target="_blank" rel="noopener" onclick="gtag('event','notebook_link_click',{link_url:'https://read.amazon.com/notebook'})">read.amazon.com/notebook</a> and log in.</p>
             </li>
             <li>
               <span class="step-num">2</span>
@@ -194,9 +194,10 @@
   </main>
 
   <script src="carousel.js"></script>
+  <script src="analytics-events.js"></script>
   <footer class="footer">
     <p>LitMarks.ai — Chrome extension for Kindle highlights</p>
-    <p><a href="privacy.html">Privacy Policy</a> · <a href="https://github.com" target="_blank" rel="noopener">View on GitHub</a></p>
+    <p><a href="privacy.html" onclick="gtag('event','privacy_link_click')">Privacy Policy</a> · <a href="https://github.com" target="_blank" rel="noopener" onclick="gtag('event','github_link_click')">View on GitHub</a></p>
   </footer>
 </body>
 </html>
